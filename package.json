@@ -1,13 +1,8 @@
 {
   "name": "deyfarm-chat",
   "version": "1.0.0",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "type": "module",
+  "scripts": {},
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
