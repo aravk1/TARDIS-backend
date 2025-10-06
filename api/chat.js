@@ -1,5 +1,8 @@
 import { Configuration, OpenAIApi } from "openai";
 
+if (!process.env.OPENAI_API_KEY) {
+  console.error("OPENAI_API_KEY not set!");
+}
 const openai = new OpenAIApi(
   new Configuration({ apiKey: process.env.OPENAI_API_KEY })
 );
