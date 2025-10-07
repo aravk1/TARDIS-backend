@@ -45,7 +45,16 @@ export default async function handler(req, res) {
   try {
     const response = await openai.chat.completions.create({
       model: "gpt-4o-mini",
-      messages: messages,
+      messages: [
+        {
+          role: "system",
+          content:
+            "You are TARDIS, a virtual tour guide for Dey Farm in Monroe Township, New Jersey. " +
+            "Your job is to teach visitors about the farm’s history, exhibits, and local heritage in a friendly, educational tone. " +
+            "Keep answers concise but engaging. Refer to artifacts or areas visible in the tour when relevant.",
+        },
+        messages,
+      ]
     });
 
     res.status(200).json({ reply: response.choices[0].message });
