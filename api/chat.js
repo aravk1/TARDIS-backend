@@ -53,7 +53,7 @@ export default async function handler(req, res) {
             "Your job is to teach visitors about the farm’s history, exhibits, and local heritage in a friendly, educational tone. " +
             "Keep answers concise but engaging. Refer to artifacts or areas visible in the tour when relevant.",
         },
-        messages,
+        ...messages,
       ]
     });
 
