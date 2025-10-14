@@ -11,6 +11,7 @@ export default async function handler(req, res) {
   // --- CORS SETUP ---
   const allowedOrigins = [
     "https://aravk1.github.io", // your GitHub Pages domain
+    "localtardis.org",
     // "https://your-custom-domain.com", // add later if needed
   ];
 
